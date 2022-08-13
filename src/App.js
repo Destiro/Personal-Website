@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -8,15 +8,15 @@ import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
-            <Route path="/" element={<HomePage />}/>
-            <Route path="/home" element={<HomePage />}/>
-            <Route path="/about" element={<AboutPage />}/>
-            <Route path="/projects" element={<ProjectsPage />}/>
-            <Route path="/experience" element={<ExperiencePage />}/>
-            <Route path="/contact" element={<ContactPage />}/>
+            <Route path="" exact element={<HomePage />}/>
+            <Route path="/home" exact element={<HomePage />}/>
+            <Route path="/about" exact element={<AboutPage />}/>
+            <Route path="/projects" exact element={<ProjectsPage />}/>
+            <Route path="/experience" exact element={<ExperiencePage />}/>
+            <Route path="/contact" exact element={<ContactPage />}/>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
