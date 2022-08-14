@@ -82,12 +82,12 @@ const styles = StyleSheet.create({
     },
     text_small: {
         fontWeight: '400',
-        fontSize: 14,
+        fontSize: '1.1rem',
         margin: '1rem'
     },
     text_big: {
         fontWeight: '400',
-        fontSize: 16,
-        margin: '4rem'
+        fontSize: '1.3rem',
+        margin: '2.5rem'
     }
 });
