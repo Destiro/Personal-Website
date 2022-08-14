@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import NavBar from "../assets/NavBar";
+import NavBar from "../components/NavBar";
 
 const AboutPage = () => {
     return (
