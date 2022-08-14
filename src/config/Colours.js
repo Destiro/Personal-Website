@@ -1,7 +1,7 @@
 /**
  * Colours that I will be using throughout the project
  */
-export default {
+const Colours = {
     //Colour Pallet
     red_primary: '#e61f05',
     red_secondary: '#ad1c02',
@@ -16,3 +16,5 @@ export default {
     light_grey: '#dedede',
     dark_grey: '#888888',
 }
+
+export default Colours;
